@@ -38,7 +38,7 @@ NumberFrameDisplayPerSecond = 10;
 
 % Construct a video input object based on the adaptor from your image 
 % acquisition device.
-rawVid = videoinput('winvideo',1,'MJPG_1280x720');
+rawVid = videoinput(adapter_name, 1 , resolution);
 
 % The object is triggered infinitely with every trigger calling a single frame
 % from the video feed i.e. the current frame which is a 3 channel RGB image
